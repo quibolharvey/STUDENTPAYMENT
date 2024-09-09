@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1e293b;
+}
+
+.container {
+    background: #f1f5f9;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 450px;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    color: #1e293b;
+}
+
+input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid #d1d5db; 
+    background-color: #f9fafb; 
+    color: #111827; 
+}
+
+input:focus {
+    border-color: #3b82f6; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+.selected {
+    background-color: #e2e8f0; 
+}
+
+ul {
+    font-size: 18px;
+    color: #1e293b; 
+    padding-left: 20px;
+}
+
+#addTaskBtn {
+    border-radius: 25px;
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    background-color: #3b82f6; 
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#addTaskBtn:hover {
+    background-color: #2563eb; 
+    transform: translateY(-2px);
+}
+
+#editBtn, #delBtn {
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#editBtn {
+    background-color: #22c55e; 
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#editBtn:hover {
+    background-color: #16a34a; 
+    transform: translateY(-2px);
+}
+
+#delBtn {
+    background-color: #ef4444; 
+    color: #fff;
+}
+
+#delBtn:hover {
+    background-color: #dc2626; 
+    transform: translateY(-2px);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #e2e8f0; 
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuition</title>
+  <style>
+    .form-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .form-box, .result-box {
+      width: 45%;
+    }
+    .result-box {
+      border: 1px solid white;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    body{
+        margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-box">
+      <h2>Student Payment Form</h2>
+      <form id="tuitionForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="tuition">Tuition Fee:</label><br>
+        <input type="number" id="tuition" name="tuition" required><br><br>
+
+        <label for="miscellaneous">Miscellaneous:</label><br>
+        <input type="number" id="miscellaneous" name="miscellaneous" required><br><br>
+
+        <label for="others">Others:</label><br>
+        <input type="number" id="others" name="others" required><br><br>
+
+        <button type="button" onclick="calculateTotal()">Submit</button>
+      </form>
+    </div>
+
+    <div class="result-box">
+      <h2>Submitted</h2>
+      <p id="display-name"></p>
+      <p id="display-tuition"></p>
+      <p id="display-miscellaneous"></p>
+      <p id="display-others"></p>
+      <h3 id="total"></h3>
+    </div>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal information</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <center>
+    <h1>PERSONAL INFORMATION</h1>
+    <form id="infoForm">
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter Name"><br><br>
+
+        <label for="age">Age: </label>
+        <input type="number" id="age" placeholder="Enter Age"><br><br>
+
+        <label for="hobbies">Hobbies: </label>
+        <input type="text" id="hobbies" placeholder="Enter Hobbies"><br><br>
+
+        <label for="student">Are you a student:</label><br>
+        <input type="checkbox" id="student"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Summary</h2>
+    <div class="container">
+    <p id="summary"></p>
+
+    <script>
+        document.getElementById("infoForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let name = document.getElementById('name').value;
+            let age = Number(document.getElementById('age').value);
+            let hobbies = document.getElementById('hobbies').value.split(',');
+            let student = document.getElementById('student').checked;
+
+            let summary = `<div><p>Name: ${name}<br><br>Age: ${age}<br><br>Hobbies: ${hobbies.join(', ')}<br><br>   Student: ${student ? 'Yes' : 'No'}</p></div>`;
+            document.getElementById('summary').innerHTML += summary;
+
+        });
+    </script>
+    </div>
+</body>
+</center>
+</html>

@@ -1,0 +1,35 @@
+body{
+    justify-content: center;
+    background-color: #1e293b;
+}
+input{
+    border-radius: 7px;
+}
+label, h1, h2, p{
+    color: aliceblue;
+    justify-content: center;
+}
+
+button:hover{
+    color: blue;
+    background-color: green;
+}
+div{
+    border: 1px solid white;
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.container{ 
+    width: 500px;
+    overflow-y: auto;
+    max-height: 400px;
+}
+input:hover{
+    color: white;
+    background-color: #1e293b;
+}
+.cbox:hover{
+    background-color: orange;
+    color: orange;
+}
